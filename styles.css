@@ -1,0 +1,233 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 95vw;
+    height: 95vh;
+    max-height: 800px;
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 3fr;
+    /* margin-bottom: 50px; */
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: rgb(35, 130, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.sidebar h1 {
+    color: white;
+    margin-left: 15%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sidebar h1 img {
+    width: 30px;
+    height: auto;
+    margin-right: 28px;
+}
+
+.sidebar ul {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar ul li {
+    margin-top: 10px;
+}
+
+.sidebar ul li:hover {
+    background-color: rgb(27, 107, 211);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul img {
+    width: 20px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.filter-white {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(286deg) brightness(104%) contrast(102%);
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.header > div {
+    /* background-color: rgb(230, 230, 230); */
+    align-items: center;
+}
+
+.header > div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr 1fr 3fr;
+}
+
+.header > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+}
+
+.header img {
+    width: 30px;
+    height: auto;
+}
+
+.header img:hover {
+    width: 35px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+
+.header #search {
+    background-color: rgb(230, 230, 230);
+    height: 60%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.header #search:hover {
+    cursor: text;
+}
+
+.header #user-profile {
+    width: 80%;
+    height: 70%;
+    background-color:rgb(150, 150, 150)
+}
+
+.header #user-profile:hover {
+    background-color:rgb(133, 133, 133);
+}
+
+.header #user-image {
+    width: 60%;
+    height: auto;
+}
+
+.header #greeting {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header button {
+    color: white;
+    background-color:rgb(35, 130, 255);
+    font-weight: bold;
+    padding: 10px 0;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+}
+
+.header button:hover {
+    background-color: rgb(27, 107, 211);
+    cursor: pointer;
+}
+
+.main {
+    background-color: rgb(230, 230, 230);
+    padding: 0 20px 20px 20px;
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.projects {
+    background-color: rgb(230, 230, 230);
+    display: grid;
+    grid-template: 0.5fr 3fr 3fr 3fr / 1fr 1fr;
+    gap: 20px;
+}
+
+.projects h2 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.projects > div {
+    background-color: white;
+    border-radius: 15px;
+    padding: 5%;
+    border-left: 5px solid rgb(243, 243, 41);
+    box-shadow: 4px 4px 1px rgb(214, 214, 214);
+}
+
+.projects p {
+    font-size: 15px;
+}
+
+.projects .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 15px;
+}
+
+.projects .actions img {
+    width: 20px;
+    height: auto;
+}
+
+.projects .actions img:hover {
+    filter: invert(41%) sepia(30%) saturate(4687%) hue-rotate(200deg) brightness(100%) contrast(103%);
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.other {
+    background-color: rgb(230, 230, 230);
+    display: grid;
+    grid-template-rows: 0.5fr 4fr 0.5fr 4fr;
+    gap: 20px;
+}
+
+.other > div {
+    background-color:white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 4px 4px 1px rgb(214, 214, 214);
+}
+
+.other p {
+    font-size: 10px;
+}
+
+.other h3 {
+    font-size: 15px;
+}
+
+.other #users {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr 3fr;
+}
+
+.other #users img {
+    width: 100%;
+    height: auto;
+}
+
+.other #users div {
+    padding: 0 0 0 20px;
+}
+
+.other .handle {
+    font-weight: bold;
+}
